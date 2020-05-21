@@ -101,6 +101,8 @@ $xmlRootElement.AppendChild($xmlGroupsElement) | out-null
 
 #end init xml
 
+#check Log Path availability
+if(-not (Test-Path $LogPath)){New-Item $LogPath -ItemType Directory}
 $_LogFileName = "Export-NotesGroupsToXML_$(Get-Date -Format "yyyy-MM-dd_HH-mm-ss").log"
 
 if ([Environment]::Is64BitProcess -eq $true) { 
