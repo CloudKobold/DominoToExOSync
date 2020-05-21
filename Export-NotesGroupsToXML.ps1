@@ -85,8 +85,6 @@ $xmlDocument.AppendChild($xmlDocument.CreateXmlDeclaration("1.0", "UTF-8", $null
 $initComment = @"
 
 Notes Group export
-Company: C&A Services GmbH & Co. OHG
-Author: David Espin, Marc Jonas
 Script Date: 04/2020
 Generated: $(Get-Date)
 
